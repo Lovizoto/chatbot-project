@@ -1,0 +1,9 @@
+[submodule "external-api"]
+	path = external-api
+	url = https://github.com/Lovizoto/externalapi
+[submodule "api-chatbot"]
+	path = api-chatbot
+	url = https://github.com/Lovizoto/apichatbot
+[submodule "chatbot-commons"]
+	path = chatbot-commons
+	url = https://github.com/Lovizoto/chatbot-commons
