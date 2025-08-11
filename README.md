@@ -4,7 +4,7 @@ A arquitetura do projeto é semelhante a um Gateway de Mensagens Adaptável com 
 O centro do sistema é a API Externa que atua como camada de segurança ou anticorrupção (Anti-Corruption Layer), onde seu Controller faz a tradução dos formatos de webhook para um modelo interno padronizado que garante flexibilidade de integração com novas plataformas.
 Na API Externa há um orquestrados de serviços que centraliza o fluxo, gerencia e identifica usuários e o ciclo de vida das sessões. A estratégia é utilizar o Redis para cache de sessões e dados de usuário, assegurando baixa latência e chamadas desnecessárias.
 
-O design pode ser observado conforme o fluxograma abaixo, em que o design feito cria a separação de responsabilidades: a API Externa gerencia a complexidade da conexão, autenticação e continuidade, bem como a persistência do usuário. A API de Chatbot tem a função o processamento da lingugem natural (PNL), manutenção e persistência do contexto da conversa, e a persistência da sessão.
+O design pode ser observado conforme o fluxograma abaixo, em que o design feito cria a separação de responsabilidades: a API Externa gerencia a complexidade da conexão, autenticação e continuidade, bem como a persistência do usuário. A API de Chatbot tem a função o processamento da linguagem natural (PNL), manutenção e persistência do contexto da conversa, e a persistência da sessão.
 
 A ideia foi trazer a escabilidade do projeto e tornar fácil sua manutenção. 
 
